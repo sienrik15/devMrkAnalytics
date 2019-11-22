@@ -32,7 +32,7 @@ object App {
       load("122n0Qjs4cGa9nJrfRX3d4rZJXoecTm4yM_7GK6VCKuM/worksheet1")
     dfS.toDF().show()*/
     val schema = StructType(
-      StructField("Placement Name", IntegerType, nullable = true) ::
+      StructField("Placement Name", LongType, nullable = true) ::
         StructField("Landing Page Impressions", FloatType, nullable = true) ::
         StructField("Total Cost", FloatType, nullable = true) ::
         StructField("Cost Per Impression", FloatType, nullable = true) ::
